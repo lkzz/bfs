@@ -163,5 +163,5 @@ func (s *Store) CanWrite() bool {
 
 // CanRead reports whether the store can read.
 func (s *Store) CanRead() bool {
-	return s.Status == StoreStatusRead || s.Status == StoreStatusHealth
+	return s.Status == StoreStatusRead || s.Status == StoreStatusHealth || s.Status == StoreStatusSync
 }
